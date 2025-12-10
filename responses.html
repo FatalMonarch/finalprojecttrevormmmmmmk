@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responses Page - gettingood</title>
+    <title>gettingResponses</title>
+    <link rel="icon" type="image/x-icon" href="gettinfavicon.png" />
     <link rel="stylesheet" href="final.css" />
   </head>
   <body class="responses-page">
@@ -17,7 +18,7 @@
             <li><a href="introduction.html">Home</a></li>
             <li><a href="responses.html">Responses</a></li>
             <li><a href="wof.html">Wall of Fame</a></li>
-            <li><a href="#">Handbook</a></li>
+            <li><a href="handbook.html">Handbook</a></li>
             <li><a href="survivalg.html">Guide</a></li>
           </ul>
         </nav>
@@ -28,33 +29,48 @@
     </header>
 
     <main>
-      <section class="image-section">
-        <div class="placeholder">
-          <img
-            src="bigarrow.png"
-            alt="Responses image"
-            class="placeholder-img"
-          />
-        </div>
-      </section>
+      <form>
+        <label for="response1">Response one</label><br />
+        <textarea
+          id="response1"
+          name="response1"
+          rows="4"
+          cols="50"
+          placeholder="Enter your response for what you want to see from your donations..."
+        ></textarea>
+        <br /><br />
 
-      <section class="form-access">
-        <h2 class="visually-hidden">Submit Form Link</h2>
-        <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSeO1yejHP18DUQ6YxJzc7F_NcVVCFC_FI9CLQ6MIHCHi8nHeA/viewform?usp=header"
-          target="_blank"
-          class="form-link"
-        >
-          Click here to submit your response
-        </a>
-      </section>
+        <label for="response2">Response two</label><br />
+        <textarea
+          id="response2"
+          name="response2"
+          rows="4"
+          cols="50"
+          placeholder="Enter your response for how you think the website could be improved..."
+        ></textarea>
+        <br /><br />
+
+        <label for="response3">Response three</label><br />
+        <textarea
+          id="response3"
+          name="response3"
+          rows="4"
+          cols="50"
+          placeholder="Enter any additional comments..."
+        ></textarea>
+        <br /><br />
+
+        <input type="submit" value="Submit" />
+      </form>
     </main>
 
     <footer>
       <p>&copy; 2025 gettingood. All rights reserved.</p>
       <p>
         <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> |
-        <a href="#">Contact Us</a>
+        <a href="trevor.markus@stu.fortthomas.kyschools.us"
+          >Contact Us @trevor.markus@stu.fortthomas.kyschools.us</a
+        >
       </p>
     </footer>
   </body>
