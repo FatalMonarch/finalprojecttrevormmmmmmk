@@ -3,11 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Introduction - gettingood</title>
+    <title>gettinIntroduced</title>
+    <link rel="icon" type="image/x-icon" href="gettinfavicon.png" />
     <link rel="stylesheet" href="final.css" />
   </head>
   <body class="intro-page">
     <img src="logo.png" alt="gettingood logo" class="site-logo" />
+
+    <audio id="click-sound" src="crunch.mp3" preload="auto"></audio>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const clickSound = document.getElementById("click-sound");
+        const images = document.querySelectorAll(".clickable-image");
+
+        images.forEach((img) => {
+          img.addEventListener("click", () => {
+            clickSound.currentTime = 0;
+            clickSound.play();
+          });
+        });
+      });
+    </script>
 
     <header>
       <div class="top-left">
@@ -29,15 +46,21 @@
 
     <main>
       <section class="intro-container">
-        <img src="Welcome!.png" alt="Left image" class="intro-image" />
+        <img
+          src="Welcome!.png"
+          alt="Left image"
+          class="intro-image clickable-image"
+        />
+
         <div class="intro-heading">
           <h2>Welcome to gettingood</h2>
         </div>
+
         <img src="Welcome!.png" alt="Right image" class="intro-image" />
 
         <div class="intro-text">
           <p>
-            Welcome to <bold>gettingood</strong>, here I will be leading you
+            Welcome to <strong>gettingood</strong>, here I will be leading you
             through my website where you can choose to donate if you desire to,
             contributing to the cause of my lunch fund. There will also be some
             strategies for budgeting for your own lunch, as this is a symbiotic
@@ -51,7 +74,9 @@
       <p>&copy; 2025 gettingood. All rights reserved.</p>
       <p>
         <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> |
-        <a href="#">Contact Us</a>
+        <a href="trevor.markus@stu.fortthomas.kyschools.us"
+          >Contact Us @trevor.markus@stu.fortthomas.kyschools.us</a
+        >
       </p>
     </footer>
   </body>
